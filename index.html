@@ -1,67 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Coming Soon</title>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #121212;
-            color: #e0e0e0;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 40px;
-        }
-
-        a {
-            color: #1e90ff;
-            text-decoration: none;
-            font-size: 1.2rem;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            margin-top: 20px;
-            font-size: 0.9rem;
-            color: #999;
-        }
-
-        footer a {
-            color: #999;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Matt Watkins — Data Scientist II</title>
+  <meta name="description" content="Portfolio of Matt Watkins — Data Scientist II focused on data modeling, NLP, and pipelines." />
+  <style>
+    :root{
+      --bg:#0f1115; --panel:#151821; --muted:#9aa4b2; --text:#e6eaf0; --brand:#e50914; --link:#4da3ff; --ok:#2ecc71;
+      --ring: rgba(77,163,255,0.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif}
+    a{color:var(--link);text-decoration:none} a:hover{text-decoration:underline}
+    .wrap{max-width:1000px;margin:0 auto;padding:24px}
+    header{display:flex;flex-wrap:wrap;align-items:center;gap:16px 24px;justify-content:space-between;margin-bottom:16px}
+    .title{display:flex;align-items:center;gap:12px}
+    .dot{width:10px;height:10px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 6px var(--ring)}
+    h1{margin:0;font-size:clamp(22px,3vw,28px)}
+    .meta{color:var(--muted);font-size:14px}
+    nav{display:flex;gap:14px;font-size:14px}
+    nav a{padding:6px 8px;border-radius:8px}
+    nav a:hover{background:var(--panel)}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;margin:24px 0}
+    @media (max-width:800px){.hero{grid-template-columns:1fr}}
+    .card{background:var(--panel);border:1px solid #202536;border-radius:14px;padding:18px}
+    .kvs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 16px}
+    .kv b{display:block;font-size:12px;color:var(--muted)}
+    .kv span{font-size:15px}
+    .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .chip{background:#0d0f14;border:1px solid #232838;color:#cfd6df;font-size:12px;padding:4px 8px;border-radius:999px}
+    h2{margin:8px 0 12px;font-size:18px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    @media (max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:600px){.grid{grid-template-columns:1fr}}
+    .proj h3{margin:0 0 6px;font-size:16px}
+    .proj p{margin:6px 0 10px;color:var(--muted)}
+    .proj .stack{font-size:12px;color:#c9d2dd}
+    .proj .cta{margin-top:10px;display:flex;gap:12px;flex-wrap:wrap}
+    footer{margin:28px 0 8px;color:var(--muted);font-size:12px;text-align:center}
+    .btn{display:inline-block;background:#10131a;border:1px solid #2a3140;color:#e7edf6;border-radius:10px;padding:6px 10px}
+    .btn:hover{background:#161a22}
+    .inline-icon{width:14px;height:14px;vertical-align:-2px;margin-right:6px}
+    .sr{position:absolute;left:-9999px}
+  </style>
 </head>
 <body>
-    <div>
-        <h1>Matt Watkins</h1>
-        <p>Welcome! My portfolio is under construction, but I'll put stuff here eventually. Stay tuned!</p>
-        <a href="https://mattwatkins.shinyapps.io/elliptic-path/" target="_blank">Explore My Elliptic Curve App</a>
-        <footer>
-            <p>Connect with me on <a href="https://www.linkedin.com/in/mattxwatkins/" target="_blank">LinkedIn</a> if you want. I'm not sure about that place.</p>
-        </footer>
-    </div>
+  <div class="wrap">
+    <header>
+      <div class="title">
+        <span class="dot" aria-hidden="true"></span>
+        <div>
+          <h1>Matt Watkins — Data Scientist II</h1>
+          <div class="meta">Clarksville, TN • <a href="mailto:mattxwatkins@gmail.com">mattxwatkins@gmail.com</a> • <a href="https://www.linkedin.com/in/mattxwatkins" target="_blank" rel="noopener">linkedin.com/in/mattxwatkins</a> • <a href="https://github.com/mattxwatkins" target="_blank" rel="noopener">github.com/mattxwatkins</a></div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a class="btn" href="Matt_Watkins_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h2>About</h2>
+        <p>I build pragmatic data solutions: turning messy, multi-source inputs into clean pipelines, models, and dashboards. Strengths in Python, R, SQL, NLP, and automation (SSIS, Power Platform). I like quick wins that scale well.</p>
+        <div class="chips" aria-label="Highlights">
+          <span class="chip">NLP & Text</span>
+          <span class="chip">Pipelines & ETL</span>
+          <span class="chip">Power BI / Shiny</span>
+          <span class="chip">Azure (DevOps)</span>
+          <span class="chip">PostgreSQL</span>
+        </div>
+      </div>
+      <div class="card" aria-label="At-a-glance">
+        <h2>At a glance</h2>
+        <div class="kvs">
+          <div class="kv"><b>Role</b><span>Data Scientist II</span></div>
+          <div class="kv"><b>Focus</b><span>Modeling • NLP • ETL</span></div>
+          <div class="kv"><b>Tooling</b><span>Python, R, SQL, SSIS</span></div>
+          <div class="kv"><b>Viz</b><span>Power BI, Shiny</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div class="grid">
+        <!-- Elliptic Curve App -->
+        <article class="proj">
+          <h3>Elliptic Curve Visualizer (R/Shiny)</h3>
+          <p>Interactive app to explore elliptic curves and point addition, with a simple interface for learners.</p>
+          <div class="stack">R, Shiny • Deployed on shinyapps.io</div>
+          <div class="cta">
+            <a class="btn" href="https://mattwatkins.shinyapps.io/elliptic-path/" target="_blank" rel="noopener">Open App</a>
+            <a class="btn" href="https://github.com/mattxwatkins/elliptic-curve-shiny-app" target="_blank" rel="noopener">Source</a>
+          </div>
+        </article>
+
+        <!-- Placeholder: ETL demo (replace link when repo ready) -->
+        <article class="proj">
+          <h3>ETL / Data Normalization Demo</h3>
+          <p>Mini-pipeline that ingests CSV/logs with mismatched columns, normalizes schemas, and loads to Postgres/SQLite.</p>
+          <div class="stack">Python (pandas), SQL, SSIS (diagram)</div>
+          <div class="cta">
+            <a class="btn" href="#" aria-disabled="true">Coming Soon</a>
+          </div>
+        </article>
+
+        <!-- Placeholder: LLM schema matching (replace link when repo ready) -->
+        <article class="proj">
+          <h3>LLM-Assisted Schema Matching</h3>
+          <p>Prototype notebook that proposes column mappings for messy survey headers with rule-based fallbacks.</p>
+          <div class="stack">Python, notebooks, prompt engineering</div>
+          <div class="cta">
+            <a class="btn" href="#" aria-disabled="true">Coming Soon</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="card" style="margin-top:16px">
+      <h2>Skills</h2>
+      <div class="grid" style="grid-template-columns:repeat(2,minmax(0,1fr))">
+        <div>
+          <p><strong>Programming & Data</strong><br/>Python, R, SQL, C#, C++, PowerShell</p>
+          <p><strong>ML / AI</strong><br/>scikit-learn, TensorFlow, PyTorch, NLP, clustering, regression, forecasting</p>
+        </div>
+        <div>
+          <p><strong>Data Eng & Cloud</strong><br/>SSIS, PostgreSQL, MongoDB, MySQL, Docker, Kubernetes, Azure (DevOps)</p>
+          <p><strong>Viz & Reporting</strong><br/>Power BI, Shiny, Tableau, Excel</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Matt Watkins
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
